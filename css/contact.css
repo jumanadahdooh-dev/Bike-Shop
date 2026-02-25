@@ -1,0 +1,135 @@
+/* --- ستايل صفحة اتصل بنا (Contact Us) --- */
+
+.contact-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #111; /* خلفية غامقة فخمة */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #222;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    color: #cc331f; /* اللون الأحمر المعتمد للمحل */
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* ستايل النموذج (Form) */
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    text-align: right; /* لمحاذاة العناوين لليمين */
+    gap: 15px;
+}
+
+.contact-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #bbb;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contact-section input:focus, 
+.contact-section textarea:focus {
+    border-color: #cc331f;
+    outline: none;
+    box-shadow: 0 0 8px rgba(204, 51, 31, 0.3);
+}
+
+/* الزر الأساسي */
+.btn-primary {
+    background: #cc331f;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #e63925;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(204, 51, 31, 0.4);
+}
+
+/* معلومات الاتصال */
+.contact-info {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #eee;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    color: #bbb;
+    font-size: 16px;
+}
+
+/* ستايل الخريطة */
+.map-section {
+    margin-top: 40px;
+    border-radius: 15px;
+    overflow: hidden; /* عشان زوايا الخريطة تطلع دائرية */
+    border: 1px solid #333;
+}
+
+.map-section h3 {
+    margin-bottom: 20px;
+    color: #cc331f;
+}
+
+/* رسائل النجاح والخطأ */
+.success {
+    background: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #28a745;
+}
+
+.error {
+    background: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dc3545;
+}
+
+/* جعل الصفحة متجاوبة مع الموبايل */
+@media (max-width: 768px) {
+    .contact-section {
+        margin: 20px;
+        padding: 20px;
+    }
+}
